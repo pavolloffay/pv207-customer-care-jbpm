@@ -5,6 +5,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.Response;
 
+import org.apache.commons.validator.routines.EmailValidator;
+
 /**
  * @author Pavol Loffay
  */
@@ -15,6 +17,8 @@ public class EmailService {
     @GET
     @Path("email")
     public Response checkDiskspace(@QueryParam("email") String email) {
-        return Response.ok().build();
+        EmailValidator emailValidator = EmailValidator.getInstance();
+        return emailValidator.isValid(email) ? Response.ok().build() :
+                Response.status(Response.Status.FORBIDDEN).build();
     }
 }
