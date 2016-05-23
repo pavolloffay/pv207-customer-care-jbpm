@@ -1,0 +1,22 @@
+server:
+  type: simple
+  applicationContextPath: /emailservice
+  connector:
+    type: http
+    port: 9080
+
+logging:
+  level: INFO
+
+  loggers:
+    "sk.loffay": DEBUG
+
+  appenders:
+    - type: console
+      threshold: DEBUG
+
+    - type: file
+      currentLogFilename: ./server.log
+      archivedLogFilenamePattern: ./server-%d{yyyy-MM-dd}.log.gz
+      # keep one week
+      archivedFileCount: 7
