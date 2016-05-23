@@ -7,6 +7,23 @@
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>customer-care</name>
+  <dependencies>
+    <dependency>
+      <groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>6.4.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-kie-services</artifactId>
+      <version>6.4.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbpm</groupId>
+      <artifactId>jbpm-workitems</artifactId>
+      <version>6.4.0.Final</version>
+    </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
@@ -14,27 +31,6 @@
       <url>http://localhost:8080/jbpm-console/maven2/</url>
     </repository>
   </repositories>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.kie</groupId>
-      <artifactId>kie-api</artifactId>
-      <version>6.4.0.Final</version>
-    </dependency>
-    <!-- http://mvnrepository.com/artifact/org.jbpm/jbpm-kie-services -->
-    <dependency>
-      <groupId>org.jbpm</groupId>
-      <artifactId>jbpm-kie-services</artifactId>
-      <version>6.4.0.Final</version>
-    </dependency>
-    <!-- http://mvnrepository.com/artifact/org.jbpm/jbpm-workitems -->
-    <dependency>
-      <groupId>org.jbpm</groupId>
-      <artifactId>jbpm-workitems</artifactId>
-      <version>6.4.0.Final</version>
-    </dependency>
-  </dependencies>
-
   <build>
     <plugins>
       <plugin>
