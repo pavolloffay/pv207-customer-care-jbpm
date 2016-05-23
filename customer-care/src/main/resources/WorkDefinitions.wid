@@ -70,7 +70,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   ],
   
   [
-    "name" : "Dummy handler",
+    "name" : "Dummyhandler",
     "displayName" : "My dummy handler",
     "icon" : "defaultservicenodeicon.png"
   ]
