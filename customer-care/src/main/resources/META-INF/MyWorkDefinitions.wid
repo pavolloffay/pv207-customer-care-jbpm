@@ -3,9 +3,9 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
 
 [
     [
-        "name" : "Dummy Handler",
+        "name" : "Dummy Handdsaler",
         "parameters" : [],
-        "displayName" : "Dummy",
+        "displayName" : "Dummday",
         "icon" : "defaultlogicon.gif"
     ],
 ]
