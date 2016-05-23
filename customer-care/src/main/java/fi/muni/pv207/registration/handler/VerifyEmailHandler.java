@@ -22,7 +22,7 @@ public class VerifyEmailHandler extends EmailWorkItemHandler {
     private String url;
     private int port;
 
-    private com.squareup.okhttp.OkHttpClient client = new OkHttpClient();
+    private com.squareup.okhttp.OkHttpClient client = new com.squareup.okhttp.OkHttpClient();
 
     public VerifyEmailHandler(int port, String url) {
         this.port = port;
@@ -34,7 +34,7 @@ public class VerifyEmailHandler extends EmailWorkItemHandler {
 
         Customer customer = (Customer) workItem.getParameter("userVariable");
 
-        com.squareup.okhttp.Request request = new Request.Builder()
+        com.squareup.okhttp.Request request = new com.squareup.okhttp.Request.Builder()
                 .url("http://localhost:" + port + url + "?email="+ customer.getEmail())
                 .build();
 

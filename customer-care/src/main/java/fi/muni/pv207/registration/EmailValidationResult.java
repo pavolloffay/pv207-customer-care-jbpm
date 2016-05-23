@@ -8,6 +8,8 @@ public class EmailValidationResult implements java.io.Serializable {
 
     static final long serialVersionUID = 1L;
 
+    public boolean valid;
+
     public EmailValidationResult() {
     }
 
