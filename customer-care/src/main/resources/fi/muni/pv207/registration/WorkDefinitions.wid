@@ -73,7 +73,7 @@ import fi.muni.pv207.registration.Customer;
       "Subject" : new StringDataType(),
       "Body" : new StringDataType()
     ],
-    "displayName" : "Email",
+    "displayName" : "EmailForCustomer",
     "icon" : "defaultemailicon.gif"
   ]
 
