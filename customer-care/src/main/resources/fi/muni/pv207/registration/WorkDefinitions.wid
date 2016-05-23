@@ -75,6 +75,15 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "EmailForCustomer",
     "icon" : "defaultemailicon.gif"
+  ],
+  
+  [
+    "name" : "VerifyEmailHandler",
+    "parameters" : [
+      "userVariable" : new ObjectDataType()
+    ],
+    "displayName" : "VerifyEmailHandler",
+    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
