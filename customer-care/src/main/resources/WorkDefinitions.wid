@@ -24,6 +24,13 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   ],
 
   [
+    "name" : "Dummy Handler",
+    "parameters" : [],
+    "displayName" : "Dummy",
+    "icon" : "defaultlogicon.gif"
+  ],
+
+  [
     "name" : "WebService",
     "parameters" : [
         "Url" : new StringDataType(),
