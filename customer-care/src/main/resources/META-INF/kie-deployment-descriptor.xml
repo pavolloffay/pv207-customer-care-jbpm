@@ -46,6 +46,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new fi.muni.pv207.registration.handler.EmailForCustomerHandler("localhost", "25", "", "")</identifier>
+            <parameters/>
+            <name>EmailForCustomer</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
