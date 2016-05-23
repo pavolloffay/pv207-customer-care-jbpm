@@ -24,7 +24,7 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   ],
 
   [
-    "name" : "Dummy Handler",
+    "name" : "DummyHandler",
     "parameters" : [],
     "displayName" : "Dummy",
     "icon" : "defaultlogicon.gif"
