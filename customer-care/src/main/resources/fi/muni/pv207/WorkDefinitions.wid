@@ -22,31 +22,15 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     "displayName" : "Log",
     "icon" : "defaultlogicon.gif"
   ],
-  [
-    "name" : "Logrrr",
-    "parameters" : [
-      "Message" : new StringDataType()
-    ],
-    "displayName" : "Log",
-    "icon" : "defaultlogicon.gif"
-  ],
 
   [
-    "name" : "DummyHandler",
-    "parameters" : [],
-    "displayName" : "Dummy",
-    "icon" : "defaultlogicon.gif"
-  ],
-
-  [
-    "name" : "WebService",
+    "name" : "Web Service",
     "parameters" : [
         "Url" : new StringDataType(),
          "Namespace" : new StringDataType(),
          "Interface" : new StringDataType(),
          "Operation" : new StringDataType(),
          "Parameter" : new StringDataType(),
-         "Endpoint" : new StringDataType(),
          "Mode" : new StringDataType()
     ],
     "results" : [
@@ -70,6 +54,30 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
         "Result" : new ObjectDataType(),
     ],
     "displayName" : "REST",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "async",
+    "parameters" : [
+         "CommandClass" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "async",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "moje eee",
+    "parameters" : [
+         "CommandClass" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "moje ",
     "icon" : "defaultservicenodeicon.png"
   ]
 
