@@ -5,4 +5,3 @@ com.squareup.okhttp.internal.tls
 okio
 com.squareup.okhttp
 com.squareup.okhttp.internal.io
-com.squareup.okhttp.OkHttpClient
