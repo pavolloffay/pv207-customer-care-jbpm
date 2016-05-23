@@ -1,4 +1,4 @@
-package fi.muni.pv207.handler;
+package fi.muni.pv207.registration.handler;
 
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
