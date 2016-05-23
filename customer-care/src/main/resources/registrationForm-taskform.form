@@ -1,0 +1,21 @@
+
+<form id="1920963358">
+<property name="name" value="registrationForm-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="customerVar_email" type="InputText" id="191383592">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (customerVar)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="customer_out/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="customerVar_name" type="InputText" id="679903511">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (customerVar)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="customer_out/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="customer_out" value="fi.muni.pv207.customer_care.Customer" id="customerVar"/>
+</form>
