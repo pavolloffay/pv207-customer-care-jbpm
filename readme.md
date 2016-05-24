@@ -3,7 +3,7 @@
 Customer care project implemented in jBPM
 
 ### Environment Set Up
- * Java 8, 
+ * Java 7, Maven 
  * Fake SMTP server running on localhost:25
  * Before running process execute `java -jar rest-services/rest-services-1.0.jar server rest-services/dropwizard.yaml` to run REST services necessary in the project.
  * Download [jBPM](http://www.jbpm.org/download/download.html), preferably `jBPM 6.4.0.Final-installer-full.zip`
