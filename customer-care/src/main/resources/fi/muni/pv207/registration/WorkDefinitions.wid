@@ -108,6 +108,15 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     ],
     "displayName" : "UserStorage",
     "icon" : "defaultlogicon.gif"
+  ],
+
+    [
+    "name" : "RemoveUserFromDB",
+    "parameters" : [
+      "Customer" : new ObjectDataType()
+    ],
+    "displayName" : "RemoveUserFromDB",
+    "icon" : "defaultlogicon.gif"
   ]
 
 ]
