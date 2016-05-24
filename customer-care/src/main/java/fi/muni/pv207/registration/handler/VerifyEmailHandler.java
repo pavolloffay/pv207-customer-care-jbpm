@@ -8,10 +8,6 @@ import org.jbpm.process.workitem.email.EmailWorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
-
 import fi.muni.pv207.registration.Customer;
 import fi.muni.pv207.registration.EmailValidationResult;
 
@@ -23,7 +19,7 @@ public class VerifyEmailHandler extends EmailWorkItemHandler {
     private String url;
     private int port;
 
-    private OkHttpClient client = new OkHttpClient();
+    private com.squareup.okhttp.OkHttpClient client = new com.squareup.okhttp.OkHttpClient();
 
     public VerifyEmailHandler(int port, String url) {
         this.port = port;
@@ -35,11 +31,11 @@ public class VerifyEmailHandler extends EmailWorkItemHandler {
 
         Customer customer = (Customer) workItem.getParameter("userVariable");
 
-        Request request = new Request.Builder()
+        com.squareup.okhttp.Request request = new com.squareup.okhttp.Request.Builder()
                 .url("http://localhost:" + port + url + "?email="+ customer.getEmail())
                 .build();
 
-        Response response = null;
+        com.squareup.okhttp.Response response = null;
         try {
             response = client.newCall(request).execute();
             response.body().string();
