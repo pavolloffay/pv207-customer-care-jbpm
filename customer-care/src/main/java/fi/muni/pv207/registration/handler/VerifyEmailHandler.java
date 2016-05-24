@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.jbpm.process.workitem.email.EmailWorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
+import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
 import fi.muni.pv207.registration.Customer;
@@ -14,7 +14,7 @@ import fi.muni.pv207.registration.EmailValidationResult;
 /**
  * @author Pavol Loffay
  */
-public class VerifyEmailHandler extends EmailWorkItemHandler {
+public class VerifyEmailHandler implements WorkItemHandler {
 
     private String url;
     private String port;
@@ -51,5 +51,9 @@ public class VerifyEmailHandler extends EmailWorkItemHandler {
         Map<String, Object> result = new HashMap<>();
         result.put("emailValidationVariable", emailValidationResult);
         manager.completeWorkItem(1, result);
+    }
+
+    @Override
+    public void abortWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
     }
 }

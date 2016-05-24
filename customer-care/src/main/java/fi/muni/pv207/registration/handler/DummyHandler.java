@@ -17,7 +17,6 @@ public class DummyHandler implements WorkItemHandler {
 
     @Override
     public void abortWorkItem(WorkItem workItem, WorkItemManager manager) {
-        // Do nothing, notifications cannot be aborted
     }
 
 }
