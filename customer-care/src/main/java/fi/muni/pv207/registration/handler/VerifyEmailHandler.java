@@ -17,11 +17,11 @@ import fi.muni.pv207.registration.EmailValidationResult;
 public class VerifyEmailHandler extends EmailWorkItemHandler {
 
     private String url;
-    private int port;
+    private String port;
 
     private com.squareup.okhttp.OkHttpClient client = new com.squareup.okhttp.OkHttpClient();
 
-    public VerifyEmailHandler(int port, String url) {
+    public VerifyEmailHandler(String port, String url) {
         this.port = port;
         this.url = url;
     }
