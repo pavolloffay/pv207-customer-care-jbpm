@@ -21,13 +21,13 @@ public class UserStorageHandler implements WorkItemHandler {
 
         Boolean resultStatus = false;
         Customer customerFromDb = CustomerDatabase.customerMap.get(customer.getEmail());
-        if (customerFromDb != null) {
+        if (customerFromDb == null) {
             CustomerDatabase.customerMap.put(customer.getEmail(), customer);
             resultStatus = true;
         }
 
         HashMap<String, Object> resultMap = new HashMap<>();
-        resultMap.put("customerStatus", resultStatus);
+        resultMap.put("ResultStatus", resultStatus);
         workItemManager.completeWorkItem(workItem.getId(), resultMap);
     }
 

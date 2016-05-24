@@ -52,7 +52,7 @@ public class SendMoneyBackHandler implements WorkItemHandler {
         }
 
         Map<String, Object> result = new HashMap<>();
-        result.put("resultStatus", resultStatus);
+        result.put("ResultStatus", resultStatus);
         workItemManager.completeWorkItem(workItem.getId(), result);
     }
 
