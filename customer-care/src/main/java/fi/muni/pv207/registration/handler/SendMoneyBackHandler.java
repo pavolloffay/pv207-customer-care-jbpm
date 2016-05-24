@@ -8,6 +8,9 @@ import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
+
 import fi.muni.pv207.registration.Customer;
 
 /**
@@ -29,8 +32,10 @@ public class SendMoneyBackHandler implements WorkItemHandler {
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
         Customer customer = (Customer) workItem.getParameter("userVariable");
 
+        RequestBody requestBody = RequestBody.create(MediaType.parse("application/json"), "{money:" + 5000 +"}");
         com.squareup.okhttp.Request request = new com.squareup.okhttp.Request.Builder()
                 .url("http://localhost:" + port + url + "?email="+ customer.getEmail())
+                .post(requestBody)
                 .build();
 
         com.squareup.okhttp.Response response = null;
