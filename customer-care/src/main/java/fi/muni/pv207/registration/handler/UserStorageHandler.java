@@ -12,7 +12,7 @@ import fi.muni.pv207.registration.db.CustomerDatabase;
 /**
  * @author Pavol Loffay
  */
-public class UserStorageHandlerHandler implements WorkItemHandler {
+public class UserStorageHandler implements WorkItemHandler {
 
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
