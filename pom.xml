@@ -9,6 +9,8 @@
 
   <properties>
     <version.org.kie>6.4.0.Final</version.org.kie>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
   <modules>
