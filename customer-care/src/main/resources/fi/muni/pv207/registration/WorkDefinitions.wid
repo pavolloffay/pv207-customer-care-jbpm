@@ -84,6 +84,24 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "VerifyEmailHandler",
     "icon" : "defaultservicenodeicon.png"
+  ],
+  
+   [
+    "name" : "SendMoneyBack",
+    "parameters" : [
+      "userVariable" : new ObjectDataType()
+    ],
+    "displayName" : "SendMoneyBack",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+   [
+    "name" : "UserStorage",
+    "parameters" : [
+      "userVariable" : new ObjectDataType()
+    ],
+    "displayName" : "UserStorage",
+    "icon" : "defaultlogicon.gif"
   ]
 
 ]
