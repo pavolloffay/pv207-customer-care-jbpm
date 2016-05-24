@@ -50,7 +50,7 @@ public class VerifyEmailHandler implements WorkItemHandler {
 
         Map<String, Object> result = new HashMap<>();
         result.put("emailValidationVariable", emailValidationResult);
-        manager.completeWorkItem(1, result);
+        manager.completeWorkItem(workItem.getId(), result);
     }
 
     @Override
