@@ -92,7 +92,7 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
       "userVariable" : new ObjectDataType()
     ],
     "results" : [
-        "ResultStatus" : new BooleanDataType,
+        "ResultStatus" : new BooleanDataType(),
     ],
     "displayName" : "SendMoneyBack",
     "icon" : "defaultservicenodeicon.png"
@@ -104,7 +104,7 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
       "Customer" : new ObjectDataType()
     ],
     "results" : [
-        "ResultStatus" : new BooleanDataType,
+        "ResultStatus" : new BooleanDataType(),
     ],
     "displayName" : "UserStorage",
     "icon" : "defaultlogicon.gif"
