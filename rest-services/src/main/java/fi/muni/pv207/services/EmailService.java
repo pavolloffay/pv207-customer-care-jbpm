@@ -1,4 +1,4 @@
-package fi.muni.pv207.email;
+package fi.muni.pv207.services;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

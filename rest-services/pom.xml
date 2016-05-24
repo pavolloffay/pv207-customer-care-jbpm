@@ -9,7 +9,7 @@
   </parent>
 
   <groupId>fi.muni.pv207</groupId>
-  <artifactId>email-service</artifactId>
+  <artifactId>rest-services</artifactId>
 
   <dependencies>
     <dependency>
@@ -54,7 +54,7 @@
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>fi.muni.pv207.email.Main</mainClass>
+                  <mainClass>fi.muni.pv207.services.Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>

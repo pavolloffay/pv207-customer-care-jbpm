@@ -7,7 +7,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>fi.muni.pv207</groupId>
-  <artifactId>email-service</artifactId>
+  <artifactId>rest-services</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -23,7 +23,7 @@
               <transformers>
                 <transformer />
                 <transformer>
-                  <mainClass>fi.muni.pv207.email.Main</mainClass>
+                  <mainClass>fi.muni.pv207.services.Main</mainClass>
                 </transformer>
               </transformers>
             </configuration>

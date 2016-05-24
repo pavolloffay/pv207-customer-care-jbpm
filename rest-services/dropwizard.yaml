@@ -1,6 +1,6 @@
 server:
   type: simple
-  applicationContextPath: /emailservice
+  applicationContextPath: /services
   connector:
     type: http
     port: 9080
