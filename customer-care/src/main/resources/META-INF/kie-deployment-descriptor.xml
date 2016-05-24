@@ -36,9 +36,21 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
+            <identifier>new fi.muni.pv207.registration.handler.SendMoneyBackHandler("9080", "/services/bank")</identifier>
+            <parameters/>
+            <name>SendMoneyBack</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.bpmn2.ServiceTaskHandler(ksession, classLoader)</identifier>
             <parameters/>
             <name>Service Task</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new fi.muni.pv207.registration.handler.RemoveUserFromDBHandler()</identifier>
+            <parameters/>
+            <name>RemoveUserFromDB</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
@@ -54,21 +66,15 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
-            <parameters/>
-            <name>Rest</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new fi.muni.pv207.registration.handler.SendMoneyBackHandler("9080", "/services/bank")</identifier>
-            <parameters/>
-            <name>SendMoneyBack</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
             <identifier>new fi.muni.pv207.registration.handler.UserStorageHandler()</identifier>
             <parameters/>
             <name>UserStorage</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
+            <parameters/>
+            <name>Rest</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
