@@ -77,15 +77,6 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     "icon" : "defaultemailicon.gif"
   ],
   
-  [
-    "name" : "VerifyEmailHandler",
-    "parameters" : [
-      "userVariable" : new ObjectDataType()
-    ],
-    "displayName" : "VerifyEmailHandler",
-    "icon" : "defaultservicenodeicon.png"
-  ],
-  
    [
     "name" : "SendMoneyBack",
     "parameters" : [
