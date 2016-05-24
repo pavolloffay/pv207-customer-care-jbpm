@@ -30,12 +30,6 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new fi.muni.pv207.registration.handler.VerifyEmailHandler("9080", "/services/email")</identifier>
-            <parameters/>
-            <name>VerifyEmailHandler</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
             <identifier>new fi.muni.pv207.registration.handler.SendMoneyBackHandler("9080", "/services/bank")</identifier>
             <parameters/>
             <name>SendMoneyBack</name>
