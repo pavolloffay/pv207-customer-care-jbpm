@@ -12,9 +12,9 @@
     <work-item-handlers>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.webservice.WebServiceWorkItemHandler(ksession, classLoader)</identifier>
+            <identifier>new fi.muni.pv207.ticket.handler.SpamRecognitionHandler()</identifier>
             <parameters/>
-            <name>WebService</name>
+            <name>SpamRecognition</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
@@ -36,27 +36,21 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
+            <identifier>new org.jbpm.process.workitem.webservice.WebServiceWorkItemHandler(ksession, classLoader)</identifier>
+            <parameters/>
+            <name>WebService</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.bpmn2.ServiceTaskHandler(ksession, classLoader)</identifier>
             <parameters/>
             <name>Service Task</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new fi.muni.pv207.registration.handler.RemoveUserFromDBHandler()</identifier>
-            <parameters/>
-            <name>RemoveUserFromDB</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
             <identifier>new org.jbpm.process.workitem.email.EmailWorkItemHandler("localhost", "25", "", "")</identifier>
             <parameters/>
             <name>Email</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new fi.muni.pv207.registration.handler.EmailForCustomerHandler("localhost", "25", "", "")</identifier>
-            <parameters/>
-            <name>EmailForCustomer</name>
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
@@ -72,9 +66,15 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new fi.muni.pv207.ticket.handler.SpamRecognitionHandler()</identifier>
+            <identifier>new fi.muni.pv207.registration.handler.RemoveUserFromDBHandler()</identifier>
             <parameters/>
-            <name>SpamRecognition</name>
+            <name>RemoveUserFromDB</name>
+        </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new fi.muni.pv207.registration.handler.EmailForCustomerHandler("localhost", "25", "", "")</identifier>
+            <parameters/>
+            <name>EmailForCustomer</name>
         </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
