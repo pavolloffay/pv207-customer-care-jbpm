@@ -70,6 +70,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new fi.muni.pv207.ticket.handler.SpamRecognitionHandler()</identifier>
+            <parameters/>
+            <name>SpamRecognition</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
