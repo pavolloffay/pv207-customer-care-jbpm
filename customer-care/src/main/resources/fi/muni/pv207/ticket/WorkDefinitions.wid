@@ -56,6 +56,18 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
     ],
     "displayName" : "REST",
     "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "SpamRecognition",
+    "parameters" : [
+        "BusinessCase" : new ObjectDataType(),
+    ],
+    "results" : [
+        "ResultStatus" : new BooleanDataType();,
+    ],
+    "displayName" : "SpamRecognition",
+    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
