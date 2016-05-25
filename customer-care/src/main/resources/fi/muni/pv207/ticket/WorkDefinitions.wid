@@ -69,6 +69,24 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     ],
     "displayName" : "SpamRecognition",
     "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "UpdateSpamRules",
+    "parameters" : [
+        "BusinessCase" : new ObjectDataType(),
+    ],
+    "displayName" : "UpdateSpamRules",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+  
+  [
+    "name" : "AttachToExistingBusinessCase",
+    "parameters" : [
+        "BusinessCase" : new ObjectDataType(),
+    ],
+    "displayName" : "AttachToExistingBusinessCase",
+    "icon" : "defaultservicenodeicon.png"
   ]
 
 ]
