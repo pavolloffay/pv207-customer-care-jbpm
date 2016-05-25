@@ -9,14 +9,17 @@ public class BusinessCase implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Tile")
+   @org.kie.api.definition.type.Label("Tile")
    private java.lang.String title;
-   @org.kie.api.definition.type.Label(value = "Description")
+   @org.kie.api.definition.type.Label("Description")
    private java.lang.String description;
-   @org.kie.api.definition.type.Label(value = "Priority")
+   @org.kie.api.definition.type.Label("Priority")
    private java.lang.Integer priority;
-   @org.kie.api.definition.type.Label(value = "Email")
+   @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
+
+   @org.kie.api.definition.type.Label(value = "Id")
+   private java.lang.Integer id;
 
    public BusinessCase()
    {
@@ -62,13 +65,24 @@ public class BusinessCase implements java.io.Serializable
       this.email = email;
    }
 
+   public java.lang.Integer getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Integer id)
+   {
+      this.id = id;
+   }
+
    public BusinessCase(java.lang.String title, java.lang.String description,
-         java.lang.Integer priority, java.lang.String email)
+         java.lang.Integer priority, java.lang.String email, java.lang.Integer id)
    {
       this.title = title;
       this.description = description;
       this.priority = priority;
       this.email = email;
+      this.id = id;
    }
 
 }
