@@ -1,7 +1,7 @@
 com.squareup.okhttp.internal
 com.squareup.okhttp.internal.http
-com.squareup.okhttp.internal.framed
 com.squareup.okhttp.internal.tls
+com.squareup.okhttp.internal.framed
 okio
 com.squareup.okhttp
 com.squareup.okhttp.internal.io
