@@ -9,12 +9,15 @@ public class Customer implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Email")
+   @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
-   @org.kie.api.definition.type.Label(value = "Surname")
+   @org.kie.api.definition.type.Label("Surname")
    private java.lang.String surname;
+
+   @org.kie.api.definition.type.Label(value = "Subscription Till")
+   private java.util.Date subscriptionTill;
 
    public Customer()
    {
@@ -50,12 +53,23 @@ public class Customer implements java.io.Serializable
       this.surname = surname;
    }
 
+   public java.util.Date getSubscriptionTill()
+   {
+      return this.subscriptionTill;
+   }
+
+   public void setSubscriptionTill(java.util.Date subscriptionTill)
+   {
+      this.subscriptionTill = subscriptionTill;
+   }
+
    public Customer(java.lang.String name, java.lang.String email,
-         java.lang.String surname)
+         java.lang.String surname, java.util.Date subscriptionTill)
    {
       this.name = name;
       this.email = email;
       this.surname = surname;
+      this.subscriptionTill = subscriptionTill;
    }
 
 }
