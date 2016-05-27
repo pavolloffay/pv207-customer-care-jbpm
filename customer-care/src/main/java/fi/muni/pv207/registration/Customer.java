@@ -16,8 +16,11 @@ public class Customer implements java.io.Serializable
    @org.kie.api.definition.type.Label("Surname")
    private java.lang.String surname;
 
-   @org.kie.api.definition.type.Label(value = "Subscription Till")
+   @org.kie.api.definition.type.Label("Subscription Till")
    private java.util.Date subscriptionTill;
+
+   @org.kie.api.definition.type.Label(value = "Subscription Type")
+   private java.lang.String subscriptionType;
 
    public Customer()
    {
@@ -63,13 +66,25 @@ public class Customer implements java.io.Serializable
       this.subscriptionTill = subscriptionTill;
    }
 
+   public java.lang.String getSubscriptionType()
+   {
+      return this.subscriptionType;
+   }
+
+   public void setSubscriptionType(java.lang.String subscriptionType)
+   {
+      this.subscriptionType = subscriptionType;
+   }
+
    public Customer(java.lang.String name, java.lang.String email,
-         java.lang.String surname, java.util.Date subscriptionTill)
+         java.lang.String surname, java.util.Date subscriptionTill,
+         java.lang.String subscriptionType)
    {
       this.name = name;
       this.email = email;
       this.surname = surname;
       this.subscriptionTill = subscriptionTill;
+      this.subscriptionType = subscriptionType;
    }
 
 }
