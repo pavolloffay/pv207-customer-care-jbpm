@@ -19,7 +19,7 @@ public class SpamRecognitionHandler implements WorkItemHandler {
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
         BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
-        boolean resultStatus = businessCase.getDescription().contains("viagra") ? true : false;
+        boolean resultStatus = businessCase.getDescription().contains("viagra");
         boolean blockedEmail = SpamEmailStorage.emailsBlacklist.contains(businessCase.getEmail());
 
         Map<String, Object> resultMap = new HashMap<>();

@@ -85,4 +85,14 @@ public class BusinessCase implements java.io.Serializable
       this.id = id;
    }
 
+   @Override
+   public String toString() {
+      return "BusinessCase{" +
+              "title='" + title + '\'' +
+              ", description='" + description + '\'' +
+              ", priority=" + priority +
+              ", email='" + email + '\'' +
+              ", id=" + id +
+              '}';
+   }
 }

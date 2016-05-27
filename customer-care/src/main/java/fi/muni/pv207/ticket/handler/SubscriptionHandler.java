@@ -18,6 +18,8 @@ public class SubscriptionHandler implements WorkItemHandler {
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
         BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
+        System.out.println("BUSINESS CASE: " + businessCase);
+
         Customer customer = CustomerDatabase.customerMap.get(businessCase.getEmail());
 
         Map<String, Object> resultMap = new HashMap<>();
