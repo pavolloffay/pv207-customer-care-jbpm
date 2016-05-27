@@ -22,6 +22,7 @@ public class SubscriptionHandler implements WorkItemHandler {
 
         Map<String, Object> resultMap = new HashMap<>();
         resultMap.put("HasValidSubscription", customer.getSubscriptionTill().after(new Date()));
+        resultMap.put("TypeOfSubscription", customer.getSubscriptionType());
         workItemManager.completeWorkItem(workItem.getId(), resultMap);
     }
 

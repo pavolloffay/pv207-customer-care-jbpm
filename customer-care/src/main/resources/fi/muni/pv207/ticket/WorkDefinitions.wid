@@ -78,6 +78,7 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     ],
     "results" : [
         "HasValidSubscription" : new BooleanDataType();,
+        "TypeOfSubscription" : new StringDataType();,
     ],
     "displayName" : "Subscription",
     "icon" : "defaultservicenodeicon.png"
