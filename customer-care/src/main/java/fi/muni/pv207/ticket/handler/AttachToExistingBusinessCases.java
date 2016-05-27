@@ -1,8 +1,6 @@
 package fi.muni.pv207.ticket.handler;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
@@ -11,6 +9,8 @@ import org.kie.api.runtime.process.WorkItemManager;
 import fi.muni.pv207.ticket.BusinessCase;
 import fi.muni.pv207.ticket.BusinessCasesStorage;
 
+import static fi.muni.pv207.ticket.BusinessCasesStorage.addBusinessCase;
+
 /**
  * @author Pavol Loffay
  */
@@ -18,17 +18,13 @@ public class AttachToExistingBusinessCases implements WorkItemHandler {
 
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
-        BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
+        final BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
-        List<BusinessCase> existingBusinessCases = BusinessCasesStorage.businessCasesMap.get(businessCase.getId());
-        if (existingBusinessCases == null) {
-            existingBusinessCases = new LinkedList<>();
-            BusinessCasesStorage.businessCasesMap.put(businessCase.getId(), existingBusinessCases);
-        }
+        addBusinessCase(businessCase);
 
-        existingBusinessCases.add(businessCase);
-
-        workItemManager.completeWorkItem(workItem.getId(), Collections.<String, Object>emptyMap());
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("BusinessCase", businessCase);
+        workItemManager.completeWorkItem(workItem.getId(), resultMap);
     }
 
     @Override
