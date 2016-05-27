@@ -9,10 +9,13 @@ public class Employee implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Type")
+   @org.kie.api.definition.type.Label("Type")
    private java.lang.String type;
-   @org.kie.api.definition.type.Label(value = "Business Case")
+   @org.kie.api.definition.type.Label("Business Case")
    private fi.muni.pv207.ticket.BusinessCase businessCase;
+
+   @org.kie.api.definition.type.Label(value = "Id")
+   private java.lang.Integer id;
 
    public Employee()
    {
@@ -38,11 +41,22 @@ public class Employee implements java.io.Serializable
       this.businessCase = businessCase;
    }
 
+   public java.lang.Integer getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Integer id)
+   {
+      this.id = id;
+   }
+
    public Employee(java.lang.String type,
-         fi.muni.pv207.ticket.BusinessCase businessCase)
+         fi.muni.pv207.ticket.BusinessCase businessCase, java.lang.Integer id)
    {
       this.type = type;
       this.businessCase = businessCase;
+      this.id = id;
    }
 
 }
