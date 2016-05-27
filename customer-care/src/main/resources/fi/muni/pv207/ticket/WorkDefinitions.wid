@@ -93,6 +93,15 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     "displayName" : "UpdateSpamRules",
     "icon" : "defaultservicenodeicon.png"
   ],
+
+  [
+    "name" : "AssignOperatorToBusinessCase",
+    "parameters" : [
+        "BusinessCase" : new ObjectDataType(),
+    ],
+    "displayName" : "AssignOperatorToBusinessCase",
+    "icon" : "defaultservicenodeicon.png"
+  ],
   
   [
     "name" : "AttachToExistingBusinessCase",
