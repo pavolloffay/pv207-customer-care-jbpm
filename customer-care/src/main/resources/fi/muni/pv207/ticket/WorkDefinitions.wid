@@ -99,6 +99,9 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
     "parameters" : [
         "BusinessCase" : new ObjectDataType(),
     ],
+    "results" : [
+        "BusinessCase" : new ObjectDataType();,
+    ],
     "displayName" : "AttachToExistingBusinessCase",
     "icon" : "defaultservicenodeicon.png"
   ]
