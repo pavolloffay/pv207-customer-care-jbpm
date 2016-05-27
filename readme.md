@@ -20,7 +20,7 @@ ant stop.demo
 # note: it deletes all cloned repositories
 ant clean.demo
 ```
-#### Pull changes from remote to jBMP
+#### Pull changes from remote to jBPM
 ```
 git clone <jbmp/.niogit/foo.git>
 cd foo
