@@ -1,4 +1,4 @@
-package fi.muni.pv207.registration.db;
+package fi.muni.pv207.ticket.db;
 
 import fi.muni.pv207.ticket.Employee;
 
