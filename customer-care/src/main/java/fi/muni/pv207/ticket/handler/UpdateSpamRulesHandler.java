@@ -1,13 +1,12 @@
 package fi.muni.pv207.ticket.handler;
 
-import java.util.Collections;
-
+import fi.muni.pv207.ticket.BusinessCase;
+import fi.muni.pv207.ticket.SpamEmailStorage;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import fi.muni.pv207.ticket.BusinessCase;
-import fi.muni.pv207.ticket.SpamEmailStorage;
+import java.util.Collections;
 
 /**
  * @author Pavol Loffay

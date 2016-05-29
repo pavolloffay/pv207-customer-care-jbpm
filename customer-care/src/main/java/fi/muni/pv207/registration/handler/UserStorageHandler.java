@@ -1,13 +1,12 @@
 package fi.muni.pv207.registration.handler;
 
-import java.util.HashMap;
-
+import fi.muni.pv207.registration.Customer;
+import fi.muni.pv207.registration.db.CustomerDatabase;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import fi.muni.pv207.registration.Customer;
-import fi.muni.pv207.registration.db.CustomerDatabase;
+import java.util.HashMap;
 
 /**
  * @author Pavol Loffay

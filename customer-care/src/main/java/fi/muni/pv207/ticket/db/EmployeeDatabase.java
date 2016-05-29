@@ -1,11 +1,9 @@
 package fi.muni.pv207.registration.db;
 
-import java.util.Date;
+import fi.muni.pv207.ticket.Employee;
+
 import java.util.HashMap;
 import java.util.Map;
-
-import fi.muni.pv207.registration.Customer;
-import fi.muni.pv207.ticket.Employee;
 
 public class EmployeeDatabase {
 

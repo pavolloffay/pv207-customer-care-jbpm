@@ -1,14 +1,13 @@
 package fi.muni.pv207.registration.handler;
 
-import java.util.HashMap;
-
+import fi.muni.pv207.registration.Customer;
 import org.jbpm.process.workitem.email.Email;
 import org.jbpm.process.workitem.email.EmailWorkItemHandler;
 import org.jbpm.process.workitem.email.SendHtml;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import fi.muni.pv207.registration.Customer;
+import java.util.HashMap;
 
 /**
  * @author Pavol Loffay

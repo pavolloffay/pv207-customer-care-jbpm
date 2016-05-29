@@ -1,18 +1,14 @@
 package fi.muni.pv207.ticket.handler;
 
-import fi.muni.pv207.registration.db.EmployeeDatabase;
 import fi.muni.pv207.ticket.BusinessCase;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 import static fi.muni.pv207.registration.db.EmployeeDatabase.employees;
-import static fi.muni.pv207.ticket.BusinessCasesStorage.addBusinessCase;
-import static java.util.Collections.emptyMap;
 
 public class AssignOperatorToBusinessCase implements WorkItemHandler {
     @Override

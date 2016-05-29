@@ -1,10 +1,10 @@
 package fi.muni.pv207.registration.db;
 
+import fi.muni.pv207.registration.Customer;
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import fi.muni.pv207.registration.Customer;
 
 /**
  * @author Pavol Loffay

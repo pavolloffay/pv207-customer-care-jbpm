@@ -3,7 +3,6 @@ package fi.muni.pv207.ticket.handler;
 import fi.muni.pv207.registration.Customer;
 import fi.muni.pv207.registration.db.CustomerDatabase;
 import fi.muni.pv207.ticket.BusinessCase;
-import fi.muni.pv207.ticket.SpamEmailStorage;
 import org.drools.core.process.instance.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemManager;
