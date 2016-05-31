@@ -17,7 +17,7 @@ public class BusinessCase implements java.io.Serializable
    private java.lang.Integer priority;
    @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
-   @org.kie.api.definition.type.Label("BusinessCaseId")
+   @org.kie.api.definition.type.Label("Id")
    private java.lang.Integer id;
 
    public BusinessCase()
