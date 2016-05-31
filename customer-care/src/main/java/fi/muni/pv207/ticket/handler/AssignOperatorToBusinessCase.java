@@ -12,11 +12,12 @@ import java.util.Map;
 public class AssignOperatorToBusinessCase implements WorkItemHandler {
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
-        final BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
+        BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
         EmployeeDatabase.employees.get(1).setBusinessCase(businessCase);
 
         Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("BusinessCase", businessCase);
         workItemManager.completeWorkItem(workItem.getId(), resultMap);
     }
 
