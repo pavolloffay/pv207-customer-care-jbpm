@@ -16,6 +16,18 @@ import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
   ],
 
   [
+    "name" : "EmailForCustomer",
+    "parameters" : [
+      "From" : new StringDataType(),
+      "Customer": new ObjectDataType(),
+      "Subject" : new StringDataType(),
+      "Body" : new StringDataType()
+    ],
+    "displayName" : "EmailForCustomer",
+    "icon" : "defaultemailicon.gif"
+  ],
+
+  [
     "name" : "Log",
     "parameters" : [
       "Message" : new StringDataType()
