@@ -19,7 +19,7 @@ public class BusinessCasesStorage {
         }
         List<BusinessCase> businessCasesForId = businessCasesMap.get(businessCase.getId());
 
-        if (businessCasesForId.isEmpty()) {
+        if (businessCasesForId == null) {
             businessCasesForId = new ArrayList<>();
         }
 
