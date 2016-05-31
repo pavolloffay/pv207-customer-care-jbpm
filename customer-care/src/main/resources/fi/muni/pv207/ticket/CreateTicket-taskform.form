@@ -1,0 +1,42 @@
+
+<form id="754020427">
+<property name="name" value="CreateTicket-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="businessCaseVariable_description" type="InputText" id="946164528">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="businessCase/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="673494487">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="businessCase/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="1" name="businessCaseVariable_email" type="InputText" id="880600903">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="businessCase/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="businessCaseVariable_title" type="InputText" id="1076144204">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="businessCase/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="businessCaseVariable_priority" type="InputTextInteger" id="864613370">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;priority (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="businessCase/priority"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="businessCase" value="fi.muni.pv207.ticket.BusinessCase" id="businessCaseVariable"/>
+</form>
