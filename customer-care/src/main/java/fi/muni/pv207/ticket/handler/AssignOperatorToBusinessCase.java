@@ -14,6 +14,8 @@ public class AssignOperatorToBusinessCase implements WorkItemHandler {
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
         BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
+        System.out.println("ASSIGN BC: " + businessCase);
+        
         EmployeeDatabase.employees.get(1).setBusinessCase(businessCase);
 
         Map<String, Object> resultMap = new HashMap<>();
