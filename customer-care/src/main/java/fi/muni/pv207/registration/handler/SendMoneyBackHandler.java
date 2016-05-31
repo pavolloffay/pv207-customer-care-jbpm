@@ -1,17 +1,15 @@
 package fi.muni.pv207.registration.handler;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.RequestBody;
+import fi.muni.pv207.registration.Customer;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
 
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.RequestBody;
-
-import fi.muni.pv207.registration.Customer;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author Pavol Loffay

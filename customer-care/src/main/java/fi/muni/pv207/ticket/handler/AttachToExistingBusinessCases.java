@@ -1,7 +1,6 @@
-package fi.muni.pv207.registration.handler;
+package fi.muni.pv207.ticket.handler;
 
-import fi.muni.pv207.registration.Customer;
-import fi.muni.pv207.registration.db.CustomerDatabase;
+import fi.muni.pv207.ticket.BusinessCase;
 import org.kie.api.runtime.process.WorkItem;
 import org.kie.api.runtime.process.WorkItemHandler;
 import org.kie.api.runtime.process.WorkItemManager;
@@ -9,19 +8,21 @@ import org.kie.api.runtime.process.WorkItemManager;
 import java.util.HashMap;
 import java.util.Map;
 
+import static fi.muni.pv207.ticket.BusinessCasesStorage.addBusinessCase;
+
 /**
  * @author Pavol Loffay
  */
-public class RemoveUserFromDBHandler implements WorkItemHandler {
+public class AttachToExistingBusinessCases implements WorkItemHandler {
 
     @Override
     public void executeWorkItem(WorkItem workItem, WorkItemManager workItemManager) {
+        final BusinessCase businessCase = (BusinessCase) workItem.getParameter("BusinessCase");
 
-        Customer customer = (Customer) workItem.getParameter("Customer");
-
-        CustomerDatabase.customerMap.remove(customer.getEmail());
+        addBusinessCase(businessCase);
 
         Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("BusinessCase", businessCase);
         workItemManager.completeWorkItem(workItem.getId(), resultMap);
     }
 

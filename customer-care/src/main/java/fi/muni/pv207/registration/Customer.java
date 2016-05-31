@@ -9,12 +9,18 @@ public class Customer implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Name")
+   @org.kie.api.definition.type.Label("Name")
    private java.lang.String name;
-   @org.kie.api.definition.type.Label(value = "Email")
+   @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
-   @org.kie.api.definition.type.Label(value = "Surname")
+   @org.kie.api.definition.type.Label("Surname")
    private java.lang.String surname;
+
+   @org.kie.api.definition.type.Label("Subscription Till")
+   private java.util.Date subscriptionTill;
+
+   @org.kie.api.definition.type.Label(value = "Subscription Type")
+   private java.lang.String subscriptionType;
 
    public Customer()
    {
@@ -50,12 +56,35 @@ public class Customer implements java.io.Serializable
       this.surname = surname;
    }
 
+   public java.util.Date getSubscriptionTill()
+   {
+      return this.subscriptionTill;
+   }
+
+   public void setSubscriptionTill(java.util.Date subscriptionTill)
+   {
+      this.subscriptionTill = subscriptionTill;
+   }
+
+   public java.lang.String getSubscriptionType()
+   {
+      return this.subscriptionType;
+   }
+
+   public void setSubscriptionType(java.lang.String subscriptionType)
+   {
+      this.subscriptionType = subscriptionType;
+   }
+
    public Customer(java.lang.String name, java.lang.String email,
-         java.lang.String surname)
+         java.lang.String surname, java.util.Date subscriptionTill,
+         java.lang.String subscriptionType)
    {
       this.name = name;
       this.email = email;
       this.surname = surname;
+      this.subscriptionTill = subscriptionTill;
+      this.subscriptionType = subscriptionType;
    }
 
 }
