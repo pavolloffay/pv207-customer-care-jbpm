@@ -3,7 +3,7 @@
 <property name="name" value="prepareResponseForCustomer-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="3" name="businessCaseVariable_description" type="InputText" id="1105775572">
+<field position="2" name="businessCaseVariable_description" type="InputText" id="1105775572">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Descriptionquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -16,7 +16,7 @@
 <property name="outputBinding" value="BusinessCase/description"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="businessCaseVariable_email" type="InputText" id="1298442044">
+<field position="0" name="businessCaseVariable_email" type="InputText" id="1298442044">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Emailquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -29,16 +29,7 @@
 <property name="outputBinding" value="BusinessCase/email"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="0" name="businessCaseVariable_id" type="InputTextInteger" id="1211926521">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="BusinessCase/id"/>
-<property name="outputBinding" value="BusinessCase/id"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="4" name="businessCaseVariable_noteFromL1" type="InputText" id="2059278189">
+<field position="3" name="businessCaseVariable_noteFromL1" type="InputText" id="2059278189">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Raw notesquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -50,7 +41,7 @@
 <property name="outputBinding" value="BusinessCase/noteFromL1"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="businessCaseVariable_solution" type="InputText" id="1247192839">
+<field position="4" name="businessCaseVariable_solution" type="InputText" id="1247192839">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Solution for Customerquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -62,7 +53,7 @@
 <property name="outputBinding" value="BusinessCase/solution"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="businessCaseVariable_title" type="InputText" id="2112759626">
+<field position="1" name="businessCaseVariable_title" type="InputText" id="2112759626">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Titlequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
