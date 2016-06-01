@@ -3,10 +3,54 @@
 <property name="name" value="Testsolution-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="businessCaseVariable_description" type="InputText" id="625310213">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;description (businessCaseVariable)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="BusinessCase/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="businessCaseVariable_email" type="InputText" id="1119827152">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;email (businessCaseVariable)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="outputBinding" value="BusinessCase/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="1285808046">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;id (businessCaseVariable)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="outputBinding" value="BusinessCase/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="businessCaseVariable_priority" type="InputTextInteger" id="1583354647">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;priority (businessCaseVariable)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="outputBinding" value="BusinessCase/priority"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
 <field position="4" name="businessCaseVariable_title" type="InputText" id="128883353">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;title (businessCaseVariable)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="true"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="BusinessCase/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
@@ -16,34 +60,6 @@
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="SolutionSuccessfulyTested"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
-</field>
-<field position="3" name="businessCaseVariable_priority" type="InputTextInteger" id="1583354647">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;priority (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="BusinessCase/priority"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="1285808046">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="BusinessCase/id"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="1" name="businessCaseVariable_email" type="InputText" id="1119827152">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;email (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="BusinessCase/email"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="businessCaseVariable_description" type="InputText" id="625310213">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;description (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="BusinessCase/description"/>
-<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="BusinessCase" value="fi.muni.pv207.ticket.BusinessCase" id="businessCaseVariable"/>
 <dataHolder inputId="" name="#A7E690" type="basicType" outId="SolutionSuccessfulyTested" value="java.lang.Boolean" id="solutionSuccessfulyTested"/>
