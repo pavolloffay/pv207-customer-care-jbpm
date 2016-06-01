@@ -3,63 +3,34 @@
 <property name="name" value="translateDescription-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="7" name="businessCaseVariable_translatedSolution" type="InputText" id="1026772936">
+<field position="2" name="businessCaseVariable_description" type="InputText" id="925825699">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;translatedSolution (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="businessCase/translatedSolution"/>
-<property name="outputBinding" value="businessCase/translatedSolution"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="5" name="businessCaseVariable_title" type="InputText" id="1306997347">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="businessCase/title"/>
-<property name="outputBinding" value="businessCase/title"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="businessCaseVariable_noteFromL1" type="InputText" id="2041824400">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;noteFromL1 (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="businessCase/noteFromL1"/>
-<property name="outputBinding" value="businessCase/noteFromL1"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="businessCaseVariable_description" type="InputText" id="925825699">
-<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;description (businessCaseVariable)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="businessCase/description"/>
 <property name="outputBinding" value="businessCase/description"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="1289390889">
+<field position="0" name="businessCaseVariable_id" type="InputTextInteger" id="1289390889">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="businessCase/id"/>
 <property name="outputBinding" value="businessCase/id"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="1" name="businessCaseVariable_email" type="InputText" id="2123043953">
+<field position="1" name="businessCaseVariable_title" type="InputText" id="1306997347">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;email (businessCaseVariable)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="businessCase/email"/>
-<property name="outputBinding" value="businessCase/email"/>
+<property name="inputBinding" value="businessCase/title"/>
+<property name="outputBinding" value="businessCase/title"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="businessCaseVariable_priority" type="InputTextInteger" id="514673339">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;priority (businessCaseVariable)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="businessCase/priority"/>
-<property name="outputBinding" value="businessCase/priority"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="6" name="businessCaseVariable_translatedDescription" type="InputText" id="1230312537">
+<field position="3" name="businessCaseVariable_translatedDescription" type="InputText" id="1230312537">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;translatedDescription (businessCaseVariable)quot;"/>
 <property name="readonly" value="false"/>
