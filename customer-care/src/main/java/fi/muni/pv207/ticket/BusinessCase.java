@@ -26,8 +26,14 @@ public class BusinessCase implements java.io.Serializable
    @org.kie.api.definition.type.Label("Id")
    private java.lang.Integer id;
 
-   @org.kie.api.definition.type.Label(value = "Note from L1 operator")
+   @org.kie.api.definition.type.Label("Note from L1 operator")
    private java.lang.String noteFromL1;
+
+   @org.kie.api.definition.type.Label(value = "Translated Description")
+   private java.lang.String translatedDescription;
+
+   @org.kie.api.definition.type.Label(value = "Translated Solution")
+   private java.lang.String translatedSolution;
 
    public BusinessCase()
    {
@@ -127,5 +133,44 @@ public class BusinessCase implements java.io.Serializable
       this.employee = employee;
       this.id = id;
       this.noteFromL1 = noteFromL1;
+   }
+
+   public java.lang.String getTranslatedDescription()
+   {
+      return this.translatedDescription;
+   }
+
+   public void setTranslatedDescription(java.lang.String translatedDescription)
+   {
+      this.translatedDescription = translatedDescription;
+   }
+
+   public java.lang.String getTranslatedSolution()
+   {
+      return this.translatedSolution;
+   }
+
+   public void setTranslatedSolution(java.lang.String translatedSolution)
+   {
+      this.translatedSolution = translatedSolution;
+   }
+
+   public BusinessCase(java.lang.String title, java.lang.String description,
+         java.lang.Integer priority, java.lang.String email,
+         fi.muni.pv207.ticket.Employee employee,
+         fi.muni.pv207.registration.Customer customer, java.lang.Integer id,
+         java.lang.String noteFromL1, java.lang.String translatedDescription,
+         java.lang.String translatedSolution)
+   {
+      this.title = title;
+      this.description = description;
+      this.priority = priority;
+      this.email = email;
+      this.employee = employee;
+      this.customer = customer;
+      this.id = id;
+      this.noteFromL1 = noteFromL1;
+      this.translatedDescription = translatedDescription;
+      this.translatedSolution = translatedSolution;
    }
 }
