@@ -1,0 +1,55 @@
+
+<form id="931212349">
+<property name="name" value="L2SolveBusinessCase-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="4" name="businessCaseVariable_priority" type="InputTextInteger" id="385090688">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;priority (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/priority"/>
+<property name="outputBinding" value="BusinessCase/priority"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="5" name="businessCaseVariable_title" type="InputText" id="1560612519">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/title"/>
+<property name="outputBinding" value="BusinessCase/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="350181127">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/id"/>
+<property name="outputBinding" value="BusinessCase/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="0" name="businessCaseVariable_description" type="InputText" id="549498274">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/description"/>
+<property name="outputBinding" value="BusinessCase/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="businessCaseVariable_noteFromL1" type="InputText" id="12452408">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;noteFromL1 (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/noteFromL1"/>
+<property name="outputBinding" value="BusinessCase/noteFromL1"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="businessCaseVariable_email" type="InputText" id="1772861006">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/email"/>
+<property name="outputBinding" value="BusinessCase/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="BusinessCase" name="#0000A0" type="dataModelerEntry" outId="BusinessCase" value="fi.muni.pv207.ticket.BusinessCase" id="businessCaseVariable"/>
+</form>
