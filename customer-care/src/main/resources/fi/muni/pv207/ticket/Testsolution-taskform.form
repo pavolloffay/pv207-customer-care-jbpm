@@ -1,0 +1,87 @@
+
+<form id="745868595">
+<property name="name" value="Testsolution-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="6" name="businessCaseVariable_title" type="InputText" id="1560854298">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/title"/>
+<property name="outputBinding" value="BusinessCase/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="businessCaseVariable_solution" type="InputText" id="9511247">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;solution (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/solution"/>
+<property name="outputBinding" value="BusinessCase/solution"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="businessCaseVariable_description" type="InputText" id="561242455">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/description"/>
+<property name="outputBinding" value="BusinessCase/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="solutionSuccessfulyTested" type="CheckBox" id="1964683643">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;SolutionSuccessfulyTested (solutionSuccessfulyTested)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="SolutionSuccessfulyTested"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="7" name="businessCaseVariable_translatedDescription" type="InputText" id="1980915252">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;translatedDescription (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/translatedDescription"/>
+<property name="outputBinding" value="BusinessCase/translatedDescription"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="businessCaseVariable_email" type="InputText" id="87764264">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/email"/>
+<property name="outputBinding" value="BusinessCase/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="businessCaseVariable_priority" type="InputTextInteger" id="1745165284">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;priority (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/priority"/>
+<property name="outputBinding" value="BusinessCase/priority"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="3" name="businessCaseVariable_noteFromL1" type="InputText" id="36407231">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;noteFromL1 (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/noteFromL1"/>
+<property name="outputBinding" value="BusinessCase/noteFromL1"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="businessCaseVariable_id" type="InputTextInteger" id="150912282">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/id"/>
+<property name="outputBinding" value="BusinessCase/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="8" name="businessCaseVariable_translatedSolution" type="InputText" id="1383670780">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;translatedSolution (businessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/translatedSolution"/>
+<property name="outputBinding" value="BusinessCase/translatedSolution"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="BusinessCase" name="#0000A0" type="dataModelerEntry" outId="BusinessCase" value="fi.muni.pv207.ticket.BusinessCase" id="businessCaseVariable"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="SolutionSuccessfulyTested" value="java.lang.Boolean" id="solutionSuccessfulyTested"/>
+</form>
