@@ -20,8 +20,11 @@ public class BusinessCase implements java.io.Serializable
 
    public Employee employee;
 
-   @org.kie.api.definition.type.Label(value = "Id")
+   @org.kie.api.definition.type.Label("Id")
    private java.lang.Integer id;
+
+   @org.kie.api.definition.type.Label(value = "Note from L1 operator")
+   private java.lang.String noteFromL1;
 
    public BusinessCase()
    {
@@ -88,13 +91,38 @@ public class BusinessCase implements java.io.Serializable
    }
 
    @Override
-   public String toString() {
+   public String toString()
+   {
       return "BusinessCase{" +
-              "title='" + title + '\'' +
-              ", description='" + description + '\'' +
-              ", priority=" + priority +
-              ", email='" + email + '\'' +
-              ", id=" + id +
-              '}';
+            "title='" + title + '\'' +
+            ", description='" + description + '\'' +
+            ", priority=" + priority +
+            ", email='" + email + '\'' +
+            ", id=" + id +
+            '}';
+   }
+
+   public java.lang.String getNoteFromL1()
+   {
+      return this.noteFromL1;
+   }
+
+   public void setNoteFromL1(java.lang.String noteFromL1)
+   {
+      this.noteFromL1 = noteFromL1;
+   }
+
+   public BusinessCase(java.lang.String title, java.lang.String description,
+         java.lang.Integer priority, java.lang.String email,
+         fi.muni.pv207.ticket.Employee employee, java.lang.Integer id,
+         java.lang.String noteFromL1)
+   {
+      this.title = title;
+      this.description = description;
+      this.priority = priority;
+      this.email = email;
+      this.employee = employee;
+      this.id = id;
+      this.noteFromL1 = noteFromL1;
    }
 }
