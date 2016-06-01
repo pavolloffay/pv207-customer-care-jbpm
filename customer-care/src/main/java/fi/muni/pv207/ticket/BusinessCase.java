@@ -18,6 +18,8 @@ public class BusinessCase implements java.io.Serializable
    @org.kie.api.definition.type.Label("Email")
    private java.lang.String email;
 
+   public Employee employee;
+
    @org.kie.api.definition.type.Label(value = "Id")
    private java.lang.Integer id;
 

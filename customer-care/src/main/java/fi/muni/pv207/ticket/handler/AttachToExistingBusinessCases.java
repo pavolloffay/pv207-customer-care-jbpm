@@ -1,14 +1,15 @@
 package fi.muni.pv207.ticket.handler;
 
-import fi.muni.pv207.ticket.BusinessCase;
-import org.kie.api.runtime.process.WorkItem;
-import org.kie.api.runtime.process.WorkItemHandler;
-import org.kie.api.runtime.process.WorkItemManager;
+import static fi.muni.pv207.ticket.BusinessCasesStorage.addBusinessCase;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static fi.muni.pv207.ticket.BusinessCasesStorage.addBusinessCase;
+import org.kie.api.runtime.process.WorkItem;
+import org.kie.api.runtime.process.WorkItemHandler;
+import org.kie.api.runtime.process.WorkItemManager;
+
+import fi.muni.pv207.ticket.BusinessCase;
 
 /**
  * @author Pavol Loffay

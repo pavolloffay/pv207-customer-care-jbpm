@@ -11,8 +11,6 @@ public class Employee implements java.io.Serializable
 
    @org.kie.api.definition.type.Label("Type")
    private java.lang.String type;
-   @org.kie.api.definition.type.Label("Business Case")
-   private fi.muni.pv207.ticket.BusinessCase businessCase;
 
    @org.kie.api.definition.type.Label(value = "Id")
    private java.lang.Integer id;
@@ -31,16 +29,6 @@ public class Employee implements java.io.Serializable
       this.type = type;
    }
 
-   public fi.muni.pv207.ticket.BusinessCase getBusinessCase()
-   {
-      return this.businessCase;
-   }
-
-   public void setBusinessCase(fi.muni.pv207.ticket.BusinessCase businessCase)
-   {
-      this.businessCase = businessCase;
-   }
-
    public java.lang.Integer getId()
    {
       return this.id;
@@ -55,7 +43,6 @@ public class Employee implements java.io.Serializable
          fi.muni.pv207.ticket.BusinessCase businessCase, java.lang.Integer id)
    {
       this.type = type;
-      this.businessCase = businessCase;
       this.id = id;
    }
 
