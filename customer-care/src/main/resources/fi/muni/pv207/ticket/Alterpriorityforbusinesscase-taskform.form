@@ -1,0 +1,71 @@
+
+<form id="495888058">
+<property name="name" value="Alterpriorityforbusinesscase-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="BusinessCaseVariable_description" type="InputText" id="2039240058">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/description"/>
+<property name="outputBinding" value="BusinessCase/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="BusinessCaseVariable_translatedSolution" type="InputText" id="1303312938">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;translatedSolution (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/translatedSolution"/>
+<property name="outputBinding" value="BusinessCase/translatedSolution"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="BusinessCaseVariable_id" type="InputTextInteger" id="660219466">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/id"/>
+<property name="outputBinding" value="BusinessCase/id"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="5" name="BusinessCaseVariable_title" type="InputText" id="648696075">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;title (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/title"/>
+<property name="outputBinding" value="BusinessCase/title"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="BusinessCaseVariable_noteFromL1" type="InputText" id="337659649">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;noteFromL1 (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/noteFromL1"/>
+<property name="outputBinding" value="BusinessCase/noteFromL1"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="BusinessCaseVariable_translatedDescription" type="InputText" id="840459231">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;translatedDescription (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/translatedDescription"/>
+<property name="outputBinding" value="BusinessCase/translatedDescription"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="BusinessCaseVariable_email" type="InputText" id="766047085">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/email"/>
+<property name="outputBinding" value="BusinessCase/email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="BusinessCaseVariable_priority" type="InputTextInteger" id="354978928">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;priority (BusinessCaseVariable)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="BusinessCase/priority"/>
+<property name="outputBinding" value="BusinessCase/priority"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<dataHolder inputId="BusinessCase" name="#0000A0" type="dataModelerEntry" outId="BusinessCase" value="fi.muni.pv207.ticket.BusinessCase" id="BusinessCaseVariable"/>
+</form>
