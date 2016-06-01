@@ -29,11 +29,14 @@ public class BusinessCase implements java.io.Serializable
    @org.kie.api.definition.type.Label("Note from L1 operator")
    private java.lang.String noteFromL1;
 
-   @org.kie.api.definition.type.Label(value = "Translated Description")
+   @org.kie.api.definition.type.Label("Translated Description")
    private java.lang.String translatedDescription;
 
-   @org.kie.api.definition.type.Label(value = "Translated Solution")
+   @org.kie.api.definition.type.Label("Translated Solution")
    private java.lang.String translatedSolution;
+
+   @org.kie.api.definition.type.Label(value = "Solution for customer")
+   private java.lang.String solution;
 
    public BusinessCase()
    {
@@ -155,12 +158,22 @@ public class BusinessCase implements java.io.Serializable
       this.translatedSolution = translatedSolution;
    }
 
+   public java.lang.String getSolution()
+   {
+      return this.solution;
+   }
+
+   public void setSolution(java.lang.String solution)
+   {
+      this.solution = solution;
+   }
+
    public BusinessCase(java.lang.String title, java.lang.String description,
          java.lang.Integer priority, java.lang.String email,
          fi.muni.pv207.ticket.Employee employee,
          fi.muni.pv207.registration.Customer customer, java.lang.Integer id,
          java.lang.String noteFromL1, java.lang.String translatedDescription,
-         java.lang.String translatedSolution)
+         java.lang.String translatedSolution, java.lang.String solution)
    {
       this.title = title;
       this.description = description;
@@ -172,5 +185,6 @@ public class BusinessCase implements java.io.Serializable
       this.noteFromL1 = noteFromL1;
       this.translatedDescription = translatedDescription;
       this.translatedSolution = translatedSolution;
+      this.solution = solution;
    }
 }
